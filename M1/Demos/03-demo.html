@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário</title>
+    </head>
+
+    <body>
+        <form>
+            <fieldset>
+                <legend>Cadastro de usuário</legend>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="mail@email.com" name="email" required />
+
+                <br />
+
+                <label for="senha">Senha</label>
+                <input id="senha" type="password" name="senha" required />
+
+                <br />
+
+                <label for="cor">Cor do perfil</label>
+                <input id="cor" type="color" name="cor" />
+
+                <section>
+                    <p>Selecione a turma</p>
+
+                    <div>
+                        <input type="radio" name="turma" value="t18" />
+                        <label>T18</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="turma" value="t19" />
+                        <label>T19</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="turma" value="t20" />
+                        <label>T20</label>
+                    </div>
+                </section>
+
+                <label for="instrutor">Instrutor(a)</label>
+                <select id="instrutor" name="instrutor">
+                    <option value="" selected disabled>Selecione seu instrutor</option>
+                    <option value="alex">Alex</option>
+                    <option value="lorena">Lorena</option>
+                    <option value="thiago">Thiago</option>
+                    <option value="vilson">Vilson</option>
+                </select>
+
+                <div>
+                    <label for="descricao">Descrição</label>
+                    <br />
+                    <textarea id="descricao" name="descricao" placeholder="Descreva aqui uma breve descrição"
+                        maxlength="150" cols="50" rows="4"></textarea>
+                </div>
+
+                <button type="submit">Clique aqui</button>
+            </fieldset>
+        </form>
+    </body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulários</title>
+    </head>
+
+    <body>
+        <form>
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui..." maxlength="25"
+                    required="true" />
+
+                <label for="idade">Idade</label>
+                <input type="number" id="idade" name="idade" placeholder="Digite sua idade aqui... " />
+
+                <label for=" email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email aqui... " required="true" />
+
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha aqui... "
+                    required="true" />
+            </div>
+
+            <div>
+                <label for="mail">Email</label>
+                <input id="mail" type="radio" name="contato" value="mail" />
+
+                <label for="telefone">Telefone</label>
+                <input id="telefone" type="radio" name="contato" value="telefone" />
+
+                <label for="whatsapp">Whatsapp</label>
+                <input id="whatsapp" type="radio" name="contato" value="whatsapp" />
+            </div>
+
+            <div>
+                <label for="escolaridade">Escolha sua escolaridade</label>
+                <select name="escolaridade" required="true" id="escolaridade">
+                    <option value="">
+                        Escolher escolaridade
+                    </option>
+                    <option value="medio-incompleto">
+                        Ensino Médio Inconpleto
+                    </option>
+                    <option value="medio-completo">
+                        Ensino Médio Completo
+                    </option>
+                    <option value="graduacao-inconpleto">
+                        Graduação Incompleta
+                    </option>
+                    <option value="graduacao-completo">
+                        Graduação Completa
+                    </option>
+                    <option value="licenciatura">
+                        Licenciatura
+                    </option>
+                    <option value="doutorado">
+                        Doutorado
+                    </option>
+                    <option value="mestrado">
+                        Mestrado
+                    </option>
+                </select>
+            </div>
+
+            <div>
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" placeholder="Digite sua mensagem" cols="20" rows="10" required>
+                </textarea>
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário Kenzie</title>
+    </head>
+
+    <body>
+        <form>
+            <div>
+                <div>
+                    <label for="nome">Nome</label>
+                </div>
+                <div>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui" maxlength="40"
+                        required />
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <label for="email">Email</label>
+                </div>
+                <div>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email aqui" maxlength="40"
+                        required />
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <label for="textarea">O que te motivou a participar do evento? </label>
+                </div>
+                <div>
+                    <textarea id="textarea" placeholder="Descreva aqui..." cols="50" rows="10"></textarea>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <label for="modulo">Selecione seu módulo</label>
+                </div>
+                <select name="modulo" id="modulo" required>
+                    <option selected disabled value="">Escolher módulo</option>
+                    <option value="m1">Módulo 1</option>
+                    <option value="m2">Módulo 2</option>
+                    <option value="m3">Módulo 3</option>
+                    <option value="m4">Módulo 4</option>
+                    <option value="m5">Módulo 5</option>
+                    <option value="m6">Módulo 6</option>
+                </select>
+            </div>
+
+            <div>
+                <div>
+                    <div>
+                        <label for="senha1">Cadastre uma senha</label>
+                    </div>
+                    <div>
+                        <input type="password" id="senha2" name="senha1" placeholder="Digite sua senha aqui"
+                            maxlength="15" required />
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="senha2">Confirme a senha</label>
+                    </div>
+                    <div>
+                        <input type="password" id="senha2" name="senha2" placeholder="Repita a senha" maxlength="15"
+                            required />
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <p>Deseja receber novidades do curso?</p>
+                <label for="sim">Sim</label>
+                <input type="radio" id="sim" value="opcao" name="opcao">
+
+                <label for="nao">Não</label>
+                <input type="radio" id="nao" value="opcao" name="opcao">
+            </div>
+
+            <div>
+                <button type="submit">Cadastrar</button>
+            </div>
+        </form>
+    </body>
+
+</html>
