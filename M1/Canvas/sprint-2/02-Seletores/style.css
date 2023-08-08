@@ -1,0 +1,14 @@
+* {
+  color: blueviolet;
+}
+
+p {
+  font-size: 24px;
+}
+.highlight {
+  background-color: aqua;
+}
+#main-title {
+  color: darkmagenta;
+  font-size: 48px;
+}

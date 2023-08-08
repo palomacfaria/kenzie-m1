@@ -1,0 +1,27 @@
+/*Atribuição por nome da cor em ingles*/
+h1 {
+  background-color: cornflowerblue;
+  color: blue;
+}
+
+/*Atribuição por hexadecimal*/
+h2 {
+  background-color: #60f777;
+  color: #009900;
+}
+/*Atribuição por RGB*/
+h3 {
+  background-color: rgb(201, 45, 45);
+  color: rgb(255, 00, 00);
+}
+/*Atribuição por RGB*/
+h4 {
+  background-color: rgba(245, 230, 6, 0.5);
+  color: rgba(245, 221, 6, 0.8);
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: rgba(27, 0, 44, 0.863);
+}
