@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@100;500&family=Oswald:wght@500&display=swap");
+
+body {
+  margin: 15px;
+  background-color: rgba(205, 244, 247, 0.8);
+  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  text-align: center;
+  color: #2548ca;
+  font-size: 36px;
+  font-family: "Oswald", "Lato", sans-serif;
+}
+h2 {
+  color: #025366;
+  font-size: 30px;
+}
+h3 {
+  color: #0986a3;
+  font-size: 26px;
+}
+.price {
+  color: #029629;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.descont {
+  color: #b90101;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.description {
+  color: black;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+#favorite {
+  color: #26ce52;
+}
+
+.footer {
+  border-top: 1px #025366 solid;
+  text-align: center;
+}
