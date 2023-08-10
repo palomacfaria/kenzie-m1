@@ -1,0 +1,32 @@
+body {
+  font-size: 20px;
+}
+.tagInlineBlock {
+  display: inline-block;
+  width: 48%;
+  text-align: center;
+  font-size: 1em;
+  padding: 10px;
+}
+
+.divisao {
+  background-color: aquamarine;
+  width: 95%;
+}
+
+section {
+  background-color: black;
+  width: 400px;
+}
+
+div {
+  background-color: cornflowerblue;
+  color: white;
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+  margin: 20px;
+  padding: 5px;
+  border: 2px solid mediumvioletred;
+  box-sizing: border-box;
+}

@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@100;500&family=Oswald:wght@500&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+}
+header {
+  width: 429px;
+}
+.title1 {
+  font-size: 42px;
+  color: #3745bd;
+  font-weight: 600;
+}
+.paragrafo1 {
+  font-size: 20px;
+  line-height: 28px;
+}

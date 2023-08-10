@@ -1,0 +1,15 @@
+h1 {
+  color: #0000ff;
+}
+span {
+  color: #ffffff;
+  background-color: #0000ff;
+}
+.box {
+  color: #001e32;
+  background-color: #e3e3e3;
+}
+#box2 {
+  color: #e3e3e3;
+  background-color: #001e32;
+}
