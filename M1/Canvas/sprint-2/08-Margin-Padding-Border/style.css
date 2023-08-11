@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+body * span {
+  margin: 0;
+  padding: 0;
+}
+section {
+  margin: 50px;
+}
+.text-line {
+  border: 3px solid #da77f3;
+  margin: 20px;
+  padding: 20px;
+  background-color: #862e9c;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 20px;
+}
+.content-box {
+  box-sizing: content-box;
+  background-color: blue;
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 4px solid black;
+}
+
+.border-box {
+  box-sizing: border-box;
+  background-color: blue;
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 4px solid black;
+}

@@ -1,0 +1,31 @@
+/*Height e width são propriedades que especificam a altura e largura de um elemento, respectivamente.*/
+.box1 {
+  height: 50px;
+  width: 300px;
+  background-color: blue;
+}
+
+/*max-height e max-width são propriedades que definem a altura e largura máxima permitidas para um elemento. Se as dimensões do elemento ultrapassarem esses valores, ele será redimensionado para se ajustar.*/
+.box2 {
+  max-height: 100px;
+  max-width: 100px;
+  background-color: red;
+}
+
+/*min-height e min-width são propriedades que definem a altura e largura mínima permitidas para um elemento. Se as dimensões do elemento forem menores que esses valores, ele será redimensionado para atender aos requisitos mínimos*/
+.box3 {
+  min-height: 20px;
+  min-width: 2px;
+  background-color: green;
+}
+
+/*É importante destacar que, ao definir apenas min-width, o elemento ainda pode se expandir além da largura máxima da tela, caso não haja outras restrições ou estilos aplicados para limitar seu tamanho.
+
+Para controlar tanto a largura mínima quanto a largura máxima do elemento em relação à largura da tela, é necessário especificar uma combinação de propriedades, como min-width e max-width. Isso permite definir uma faixa de tamanhos aceitáveis para o elemento.*/
+
+.box4 {
+  min-height: 20px;
+  min-width: 20px;
+  max-width: 300px;
+  background-color: orange;
+}
