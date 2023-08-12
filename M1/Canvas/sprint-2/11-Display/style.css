@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+.exemple {
+  color: #fff;
+}
+.exemple-item {
+  display: inline-block;
+  height: 150px;
+  width: 25%;
+}
+
+.exemple-item_first {
+  background-color: #faa326;
+}
+.exemple-item_second {
+  background-color: #3b92d3;
+}
+.exemple-item_third {
+  background-color: #08cf29;
+}

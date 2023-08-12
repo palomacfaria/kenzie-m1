@@ -1,0 +1,15 @@
+.first-section {
+  width: 90vw;
+  height: 50vh;
+  background-color: black;
+  color: #ffffff;
+  padding: 10px;
+}
+.second-section {
+  margin-top: 5px;
+  width: 90vw;
+  height: 50vh;
+  background-color: blue;
+  color: #ffffff;
+  padding: 10px;
+}
