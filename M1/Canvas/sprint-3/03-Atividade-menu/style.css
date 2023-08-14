@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3vw 8vw;
+  box-shadow: 6px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.header-logo {
+  flex-grow: 1;
+  color: blue;
+  font-size: 2em;
+  font-weight: 600;
+}
+.header-nav {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 4vw;
+  flex-grow: 1;
+}
+.header-nav-link {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+.header-nav-link:hover {
+  color: blue;
+  border-bottom: 2px solid blue;
+}
+.header-nav-link:focus {
+  color: blue;
+  border-bottom: 2px solid blue;
+}
