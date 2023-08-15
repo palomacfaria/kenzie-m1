@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+body {
+  background-image: url(../images/RJ.jpg);
+  background-size: cover;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  font-family: "Roboto", sans-serif;
+}
+main {
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.contact {
+  width: 250px;
+  background-color: #fffefe93;
+  border: 1px solid #808080;
+  border-radius: 10px;
+  padding: 30px 20px;
+}
+.contact img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 0 50% 50% 0;
+  margin-bottom: 10px;
+}
+.info-container {
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+}
+.info-container img {
+  width: 20px;
+  height: 20px;
+  margin-top: 3px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+}
+.info .title {
+  font-weight: 400;
+  font-size: 15px;
+}
+.info p {
+  margin: 3px;
+  font-size: 12px;
+}
+.form-section {
+  width: 250px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  border: 1px solid #808080;
+  border-radius: 10px;
+
+  background-color: #fffefe93;
+}
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+}
+input,
+textarea {
+  border: 1px solid #27272755;
+  font-size: 12px;
+  padding: 7px;
+  border-radius: 5px;
+}
+textarea {
+  height: 50px;
+}
+button {
+  background-color: #1089ff;
+  color: #ffffff;
+  width: fit-content;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #026cd6;
+  cursor: pointer;
+}
