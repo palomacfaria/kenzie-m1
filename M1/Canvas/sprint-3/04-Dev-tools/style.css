@@ -1,0 +1,30 @@
+#box1{
+    color: #e3e3e3;
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+#box2{
+    color: #e3e3e3;
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+#box3{
+    color: #e3e3e3;
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    height: 400px;
+}
