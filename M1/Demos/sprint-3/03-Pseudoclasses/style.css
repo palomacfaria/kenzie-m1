@@ -1,0 +1,23 @@
+.p1:hover{
+    background: cyan;
+    transition: 1s;
+}
+.p2:hover{
+    background: greenyellow;
+    transition: 1s;
+}
+section > .card{
+    width: 120px;
+    background-color: gray;
+    border: 2px solid black;
+    transition: 500ms;
+}
+#cards img{
+    width: 100%;
+}
+.card:hover{
+    border: 4px solid black;
+}
+.card:hover{
+    font-size: 1.5rem;
+}
