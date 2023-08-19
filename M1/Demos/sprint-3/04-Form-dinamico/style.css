@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #eeeeee;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/48db8cc8-bc54-4ac4-a791-ef75d6416986/ddo7jwl-e0115623-f5d6-4d8e-b2f5-c62edcb6877b.jpg/v1/fill/w_1024,h_577,q_75,strp/naruto_background_11_by_pungpp_ddo7jwl-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc3IiwicGF0aCI6IlwvZlwvNDhkYjhjYzgtYmM1NC00YWM0LWE3OTEtZWY3NWQ2NDE2OTg2XC9kZG83andsLWUwMTE1NjIzLWY1ZDYtNGQ4ZS1iMmY1LWM2MmVkY2I2ODc3Yi5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.kZrf2xKkzIH30OaR-XaFInmcBRqqtoya3rkfe_x0LYk");
+    background-position: 0;
+    background-size: cover;
+}
+header{
+    text-align: center;
+    background-color: white;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header > img{
+    width: 200px;
+}
+main{
+    box-sizing: border-box;
+    height: 80vh;
+    padding: 50px 10%;
+
+    display: flex;
+    justify-content: space-between;
+}
+section{
+    width: 49%;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 20px 40px;
+    background-color: rgb(255, 255, 255, 0.7);
+}
+section:hover{
+    background-color: white;
+}
+section > img{
+    width: 25%;
+    border-radius: 15px 100% 100% 15px;
+}
+section > img:hover{
+    width: 30%;
+    max-height: 40vh;
+    transition: 1s;
+    border-radius: 15px;
+}
+h2{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+p{
+    color: black;
+}
+.informations{
+    margin-top: 15px;
+    padding: 6px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+.informations p{
+    margin: 20px auto;
+    font-size: 1rem;
+}
+.nome::before{
+    content: "Nome: ";
+    font-weight: bold;
+}
+.sobrenome::before{
+    content: "Sobrenome: ";
+    font-weight: bold;
+}
+.descricao::before{
+    content: "Descrição: ";
+    font-weight: bold;
+}
+.cidade::before{
+    content: "Cidade: ";
+    font-weight: bold;
+}
+.configuracoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+input, select{
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 3px;
+    font-size: 1rem;
+}
+input:focus, select:focus{
+    outline: 0;
+    border-color: #29e;
+}
+button{
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 10px;
+    background-color: #29e;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #0574c4;
+    color: #ffffff;
+}
+footer{
+    text-align: center;
+    background-color: white;
+    color: black;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
