@@ -33,3 +33,12 @@ console.log(a !== c); //true
 console.log(a >= b); //true (pois é maior)
 //a é menor ou igual a b?
 console.log(a <= b); //false (pois as duas afirmações são falsas)
+
+//Condições
+const entradaNome = prompt('Qual é o seu nome?');
+
+if(entradaNome === 'Crsitian'){
+    alert("Seja muito bem vindo Cristian!");
+}else{
+    alert(`Seja muito be vindo(a) ${entradaNome}!`);
+}
