@@ -1,0 +1,23 @@
+.box {
+  height: 150px;
+  width: 150px;
+  margin:15px;
+}
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.yellow {
+  background-color: yellow;
+}
+
+@media screen and (max-width:320px){
+  .box{
+    background-color: green;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+  }
+}
