@@ -40,39 +40,39 @@ if(gostoDeChocolate === true && gostoDeChuchu === true){
 // Escreva um algoritmo que leia três valores inteiros e diferentes e mostre-os em ordem
 // decrescente.
 
-const valor1 = 3;
-const valor2 = 2;
-const valor3 = 1;
+const num1 = 1;
+const num2 = 2;
+const num3 = 3;
 
-if(valor1 < valor2 && valor1 < valor3 && valor2 < valor3){
-    alert(`${valor1}, ${valor2}, ${valor3}`);
+if(num1 > num2 && num2 > num3){
+    alert(`${num1}, ${num2}, ${num3}`);
 }
-if(valor1 < valor2 && valor1 < valor3 && valor3 < valor2){
-    alert(`${valor1}, ${valor3}, ${valor2}`);
+else if(num1 > num2 && num2 < num3){
+    alert(`${num1}, ${num3}, ${num2}`);
 }
-else if(valor2 < valor1 && valor2 < valor3 && valor1 < valor3){
-    alert(`${valor2}, ${valor1}, ${valor3}`);
+else if(num2 > num1 && num1 > num3){
+    alert(`${num2}, ${num1}, ${num3}`);
 }
-if(valor2 < valor1 && valor2 < valor3 && valor3 < valor1){
-    alert(`${valor2}, ${valor3}, ${valor1}`);
+else if(num2 > num1 && num3 > num1){
+    alert(`${num2}, ${num3}, ${num1}`);
 }
-else if(valor3 < valor2 && valor2 < valor1 && valor2 < valor1){
-    alert(`${valor3}, ${valor2}, ${valor1}`)
+else if(num3 > num2 && num2 > num1){
+    alert(`${num3}, ${num2}, ${num1}`);
 }
-if(valor3 < valor2 && valor3 < valor1 && valor1 < valor2){
-    alert(`${valor3}, ${valor1}, ${valor2}`);
-}else{
-    alert("Todos os números precisam ser diferentes");
+else if(num3 > num2 && num1 > num2){
+    alert(`${num3}, ${num1}, ${num2}`);
 }
 
 
 // Exercício 5
 // Escreva um algoritmo que receba dois números. ⁠Alerte em tela qual o maior valor recebido.
-const num1 = 523;
-const num2 = 16541;
+const num4 = 523;
+const num5 = 16541;
 
 if (num1 > num2){
-    alert(`O maior valor recebido é ${num1}`);
+    alert(`O maior valor recebido é ${num4}`);
+}else if(num1 < num2){
+    alert(`O maior valor recebido é ${num5}`);
 }else{
-    alert(`O maior valor recebido é ${num2}`);
+    alert("Os números são iguais");
 }
