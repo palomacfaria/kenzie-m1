@@ -25,7 +25,7 @@ console.log(resultado);
 
 //***************************************************************************************** */
 //Função SEM retorno
-/*Funções SEM retorno não retornam um valor. Em vex disso, ela executa um conjunto de instruões e pode ter um efeito colateral, como exibir informações na tela ou alterar variáveis globais.*/
+/*Funções SEM retorno não retornam um valor. Em vez disso, ela executa um conjunto de instruões e pode ter um efeito colateral, como exibir informações na tela ou alterar variáveis globais.*/
 function semRetorno(){
     const a = 12;
     const b = 15;
