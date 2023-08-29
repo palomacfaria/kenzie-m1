@@ -61,19 +61,19 @@ Ao receber 0 a função deve retornar 'Valor Inválido'*/
 function diaDaSemana(n) {
   let resultado = "";
 
-  if (n == 1 || n === "Domingo") {
+  if (n == 1) {
     resultado = "Domingo";
-  } else if (n == 2 || n === "Segunda-feira") {
+  } else if (n == 2) {
     resultado = "Segunda-feira";
-  } else if (n == 3 || n === "Terça-feira") {
+  } else if (n == 3) {
     resultado = "Terça-feira";
-  } else if (n == 4 || n === "Quarta-feira") {
+  } else if (n == 4) {
     resultado = "Quarta-feira";
-  } else if (n == 5 || n === "Quinta-feira") {
+  } else if (n == 5) {
     resultado = "Quinta-feira";
-  } else if (n == 6 || n === "Sexta-feira") {
+  } else if (n == 6) {
     resultado = "Sexta-feira";
-  } else if (n == 7 || n === "Sábado") {
+  } else if (n == 7) {
     resultado = "Sábado";
   } else if (n == 0 || n > 7) {
     resultado = "Valor Inválido";
