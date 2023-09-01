@@ -6,8 +6,8 @@ function vogalOuConsoante(letra){
     }
     return "A letra informada é uma CONSOANTE";
 }
-const letraInformada = prompt("Digite uma letra: ");
-console.log(vogalOuConsoante(letraInformada));
+console.log(vogalOuConsoante('a'));
+console.log(vogalOuConsoante('y'));
 
 /*2- Faça um script que pede duas notas de um aluno. Em seguida ele deve calcular a média do aluno e dar o seguinte resultado:
 
@@ -25,9 +25,9 @@ function calculaMedia(nota1, nota2){
         return "Aprovado com Distinção";
     }
 }
-const notaInformada1 = prompt("Digite a primeira nota:");
-const notaInformada2 = prompt("Digite a segunda nota:");
-console.log(calculaMedia(notaInformada1, notaInformada2));
+console.log(calculaMedia(4, 5));
+console.log(calculaMedia(7.65, 8));
+console.log(calculaMedia(10, 10));
 
 /* 3. Faça um script que pergunte em que turno você estuda. Peça para digitar M-matutino ou V-Vespertino ou N- Noturno. Imprima a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!" ou "Valor Inválido!", conforme o caso. */
 function turnoDeEstudo(turno){
@@ -41,8 +41,9 @@ function turnoDeEstudo(turno){
     }
     return "Valor inválido!"
 }
-const turnoInformado = prompt("DIgite o seu turno de estudo sendo 'M'-matutino, 'V'-Vespertino e 'N'- Noturno.");
-console.log(turnoDeEstudo(turnoInformado));
+console.log(turnoDeEstudo('M'));
+console.log(turnoDeEstudo('v'));
+console.log(turnoDeEstudo('N'));
 
 /*4. As Organizações Tabajara resolveram dar um aumento de salário aos seus colaboradores e lhe contrataram para desenvolver um script que calculará os reajustes.
 
@@ -63,26 +64,26 @@ function aumentoSlario(salario){
     let aumento = 0;
     if(salario < 280.00){
         reajuste = (salario * 0.2) + salario;
-        console.log(reajuste)
         aumento = reajuste - salario;
         return `O salário antes do reajuste era de ${salario} o percentual de aumento aplicado foi de 20%, o valor do aumento foi de ${aumento} e o novo salário é ${reajuste}`;
     }
     else if(salario >= 280.00 && salario < 700.00){
-        reajuste = salario * 0.15;
+        reajuste = (salario * 0.15) + salario;
         aumento = reajuste - salario;
         return `O salário antes do reajuste era de ${salario} o percentual de aumento aplicado foi de 15%, o valor do aumento foi de ${aumento} e o novo salário é ${reajuste}`;
     }
     else if(salario >= 700.00 && salario < 1500.00){
-        reajuste = salario * 0.10;
+        reajuste = (salario * 0.10) + salario;
         aumento = reajuste - salario;
         return `O salário antes do reajuste era de ${salario} o percentual de aumento aplicado foi de 10%, o valor do aumento foi de ${aumento} e o novo salário é ${reajuste}`;
     }
     else{
-        reajuste = salario * 0.5;
+        reajuste = (salario * 0.5) + salario;
         aumento = reajuste - salario;
         return `O salário antes do reajuste era de ${salario} o percentual de aumento aplicado foi de 5%, o valor do aumento foi de ${aumento} e o novo salário é ${reajuste}`;
     }
 }
-
-const salarioInformado = prompt("Digite seu salário atual:");
-console.log(aumentoSlario(salarioInformado));
+console.log(aumentoSlario(170.00));
+console.log(aumentoSlario(350.00));
+console.log(aumentoSlario(720.00));
+console.log(aumentoSlario(1600.00));
