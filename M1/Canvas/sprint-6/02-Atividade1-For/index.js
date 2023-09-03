@@ -9,7 +9,7 @@ function renderUpToTwenty(){
         console.log(i);
     }
 }
-//renderUpToTwenty();
+renderUpToTwenty();
 
 /* 2- Escreva uma função chamada tenInTenToAHundred(). Quando a função for chamada, os números de 10 a 100, contando de 10 em 10, devem ser impressos no console.
 
@@ -17,13 +17,11 @@ Exemplo:
 Chamada da função: ⁠tenInTenToAHundred()
 Saída: 10,20,30,40,50... 100 */
 function tenInTenToAHundred(){
-    for(let i = 0; i <= 100; i++){
-        if(i == 10 || i == 20 || i == 30 || i == 40 || i == 50 || i == 60 || i == 70 || i == 80 || i == 90 || i == 100){
-            console.log(i);
-        }
+    for(let i = 10; i <= 100; i+= 10){
+        console.log(i);
     }
 }
-//tenInTenToAHundred();
+tenInTenToAHundred();
 
 
 /* 3- Escreva uma função chamada oddUpToTwenty(). Quando a função for chamada, apresente no console os valores entre 0 e 20 que forem ímpares.
@@ -38,7 +36,7 @@ function oddUpToTwenty(){
         }
     }
 }
-//oddUpToTwenty();
+oddUpToTwenty();
 
 /* 4- Escreva uma função chamada evenUpToTwenty(). Quando a função for chamada, apresente no console os valores entre 0 e 20 que forem pares.
 
@@ -52,7 +50,7 @@ function evenUpToTwenty(){
         }
     }
 }
-//evenUpToTwenty();
+evenUpToTwenty();
 
 /* 5- Escreva uma função chamada fromNegativeToPositive(). Quando a função for chamada, apresente os valores de -10 a 0.
 
@@ -64,7 +62,7 @@ function fromNegativeToPositive(){
         console.log(i);
     }
 }
-//fromNegativeToPositive();
+fromNegativeToPositive();
 
 /* 6- Escreva uma função chamada inDescendingDirection. Quando a função for chamada, apresente valores de 10 a 0 no console.
 
@@ -76,7 +74,7 @@ function inDescendingDirection(){
         console.log(i);
     }
 }
-//inDescendingDirection();
+inDescendingDirection();
 
 /* 7- Escreva uma função chamada toSquare(). Quando a função for chamada, apresente o quadrado dos valores da sequência de 1 a 10.
 
@@ -84,7 +82,7 @@ Exemplo:
 Chamada da função: toSquare()
 Saída: 1,4,9,16...100 */
 function toSquare(){
-    for(let i = 0; i <= 10; i++){
+    for(let i = 1; i <= 10; i++){
         resultado = i**2;
         console.log(`O quadrado do número ${i} = ${resultado}`);
     }
