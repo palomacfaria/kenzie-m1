@@ -28,8 +28,6 @@ Caso a posição exista, retorne o nome que se encontra nela. ⁠Caso não seja 
 function acessaArray(number){
     let posicao = number;
     let arr = ["Hermanoteu", "Olonéia", "Migalatéia", "Godart"];
-
-    if(typeof posicao )
 }
 
 
