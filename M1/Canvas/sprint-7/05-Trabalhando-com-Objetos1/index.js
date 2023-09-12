@@ -86,7 +86,7 @@ function potenciaReal(){
   let potencia = carro.potencia;
 
   if(carro.luxo === true){
-    potencia = potencia * 2;
+    potencia = potencia ** 2;
     return potencia;
   }
   else{
