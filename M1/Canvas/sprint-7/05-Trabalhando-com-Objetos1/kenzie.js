@@ -122,3 +122,30 @@ function adicionarNovaClasse(novaClasse){
     return "Classe inválida. As classes permitidas são: sedan, hatchback, suv, crossover e cupê.";
 }
 console.log(adicionarNovaClasse('cupê'));
+/* -⁠Escreva uma função chamada naoMaisLuxo:
+-Verifique se o carro está estacionado.
+-Se o carro não estiver estacionado, retorne: "O carro {placa do carro} não está estacionado".
+-Verifique se o atributo "luxo" do carro é verdadeiro.
+-Se o atributo "luxo" não for verdadeiro, retorne: "O carro {placa do carro} não é luxuoso".
+-Se ambos os atributos estiverem corretos (carro estacionado e luxo verdadeiro), altere o atributo "luxo" para falso.
+-Retorne: "O carro {placa do carro} não é mais considerado um carro de luxo",.
+
+Obs.: Substitua "{placa do carro}" pela placa do carro em questão.
+
+Exemplo de chamada da função: naoMaisLuxo()
+Saída: "O carro ABC123 não é mais considerado um carro de luxo"  */
+function naoMaisLuxo(){
+  if(!carro.estacionado){
+    return `O carro ${carro.placa} não está estacionado`;
+  }
+  else if(!carro.luxo){
+    return `O carro ${carro.placa} não é luxuoso`;
+  }
+  else if (carro.luxo && carro.estacionado){
+    return "carro estacionado e luxo verdadeiro";
+  }
+  else{
+    return `O carro ${carro.placa} não é mais considerado um carro de luxo`;
+  }
+}
+console.log(naoMaisLuxo());
