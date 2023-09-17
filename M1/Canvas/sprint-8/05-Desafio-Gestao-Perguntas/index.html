@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js" defer></script>
+    <title>🧠 Desafio - JavaScript: Gestão de Perguntas</title>
+  </head>
+  <body>
+    <header>
+      <h1>🧠 Desafio - JavaScript: Gestão de Perguntas</h1>
+    </header>
+    <main>
+      <h2>Contexto</h2>
+      <p>
+        Você foi contratado para desenvolver uma aplicação para as perguntas dos
+        eventos digitais chamada Slenzie. A ferramenta será responsável por
+        armazenar as perguntas recebidas.
+      </p>
+      <h2>Execução</h2>
+      <p>
+        Crie um objeto chamado slenzie. Este objeto deve ter as seguintes
+        propriedades:
+      </p>
+      <p>
+        nameEvent - Esta propriedade é do tipo string e será utilizada para
+        armazenar o nome do evento em que será utilizada a ferramenta.
+      </p>
+      <p>
+        questions - Esta propriedade recebe um valor do tipo lista, para
+        armazenar cada pergunta realizada.
+      </p>
+      <p>
+        O outro objeto necessário é o question. Ele deve ter as seguintes
+        propriedades:
+      </p>
+      <p>
+        user - Esta é uma propriedade do tipo string e irá armazenar o nome do
+        usuário que realizou a pergunta.
+      </p>
+      <p>
+        userQuestion - Esta é uma propriedade do tipo string e irá armazenar a
+        pergunta realizada pelo usuário.
+      </p>
+      <p>
+        vote - Esta é uma propriedade do tipo number e deve armazenar
+        obrigatoriamente um inteiro positivo. Inicialmente seu valor é zero.
+      </p>
+      <h2>Funcionalidades</h2>
+      <p>
+        1- Desenvolva uma função chamada createEvent. Esta função recebe como
+        parâmetro um objeto do tipo slenzie e uma string. Acesse a propriedade
+        nameEvent do objeto slenzie e atribua a ela o valor da string recebida.
+      </p>
+      <h2>O que deve ser verificado</h2>
+      <ol>
+        <li>
+          <p>Verifique se o valor recebido realmente é uma string.</p>
+          <p>
+            Verifique se o valor recebido como parâmetro tem no mínimo 5
+            caracteres.
+          </p>
+        </li>
+        <ul>
+          <li>
+            Se os testes forem bem sucedidos retorne o objeto slenzie
+            atualizado.
+          </li>
+          <li>Se não, retorne: "The input value is invalid".</li>
+        </ul>
+        <li>
+          <p>Desenvolva uma função chamada addQuestion.</p>
+          <p>
+            Esta função recebe um objeto do tipo slenzie e um objeto do tipo
+            question como parâmetro.
+          </p>
+          <p>
+            A pergunta (question) deve ser armazenada na lista de perguntas
+            (questions) do objeto slenzie.
+          </p>
+          <h3>O que deve ser verificado</h3>
+          <ul>
+            <li>
+              Verifique se o objeto do tipo question não possui propriedades
+              vazias; é obrigatório que as propriedades possuam valor.
+            </li>
+            <li>
+              Se a propriedade user estiver vazia, retorne: "The user can't be
+              empty".
+            </li>
+            <li>
+              Se a propriedade userQuestion estiver vazia, retorne: "The
+              question can't be null".
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>Desenvolva uma função chamada addVoteToQuestion.</p>
+          <p>
+            Esta função deve receber um valor inteiro como parâmetro e o objeto
+            slenzie. Acesse a lista de perguntas (questions) do objeto slenzie e
+            incremente a propriedade vote do elemento da lista na posição
+            recebida como parâmetro.
+          </p>
+          <h3>O que deve ser verificado</h3>
+          <ul>
+            <li>
+              Verifique se o valor passado está dentro dos limites do tamanho da
+              lista.Se o valor não estiver dentro dos limites da lista, retorne:
+              "Question not found."
+            </li>
+            <li>
+              Verifique se o valor passado é neutro ou um inteiro positivo. Se
+              os valores não estiverem dentro dos padrões retorne: "The value is
+              not allowed". Se tudo estiver dentro dos padrões verificados nos
+              passos anteriores retorne:"Vote registered successfully".
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>Desenvolva uma função chamada questionAnswered.</p>
+          <p>
+            Esta função deve receber um valor inteiro e o objeto slenzie como
+            parâmetro.
+          </p>
+          <p>
+            Acesse a lista de perguntas (questions) e adicione a propriedade
+            answered na pergunta (question) referente à posição do número
+            inteiro recebido como parâmetro.
+          </p>
+          <p>Defina o valor true para a propriedade answered .</p>
+          <h3>O que deve ser verificado</h3>
+          <ul>
+            <li>
+              Verifique se o valor passado está dentro dos limites do tamanho da
+              lista. Se o valor não estiver dentro dos limites da lista,
+              retorne: "Question not found."
+            </li>
+            <li>
+              Verifique se o valor passado é neutro ou um inteiro positivo. Se
+              os valores não estiverem dentro dos padrões retorne: "The value is
+              not allowed"
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>Desenvolva uma função chamada unansweredQuestions.</p>
+          <p>
+            Esta função recebe o objeto do tipo slenzie como parâmetro e retorna
+            todas as perguntas que ainda não foram respondidas.
+          </p>
+          <ul>
+            <li>
+              Crie uma variável chamada output. Esta variável deve ser
+              inicializada como uma lista vazia.
+            </li>
+            <li>
+              Percorra a lista de perguntas (questions). As perguntas que não
+              tiverem a propriedade answered como true deverão ser inseridas
+              nesta lista.
+            </li>
+            <li>Retorne a lista output.</li>
+          </ul>
+        </li>
+      </ol>
+    </main>
+  </body>
+</html>
