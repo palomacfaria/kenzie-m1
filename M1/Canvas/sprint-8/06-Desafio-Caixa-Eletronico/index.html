@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js" defer></script>
+    <title>🧠 Desafio - JavaScript : Caixa Eletrônico</title>
+  </head>
+  <body>
+    <header>
+      <h1>🧠 Desafio - JavaScript : Caixa Eletrônico</h1>
+    </header>
+    <main>
+      <p>
+        Nesta atividade vamos desenvolver as funcionalidades de um caixa
+        eletrônico, a partir das informações de um cliente.
+      </p>
+      <p>
+        Nós sabemos que um caixa eletrônico, possui algumas responsabilidades,
+        como: saque, saldo, depósito, entre outros... Agora, vamos manipular
+        informações de um objeto para realizar algumas destas ações.
+      </p>
+      <h2>Quais funcionalidades vamos desenvolver</h2>
+      <ul>
+        <li>1 - Saque</li>
+        <li>2 - Saldo</li>
+        <li>3 - Depósito</li>
+      </ul>
+      <h2>Estruturando as funcionalidades</h2>
+      <ol>
+        <li>
+          <p>
+            Saque - Desenvolva uma função chamada makeWithDrawal. O objetivo
+            principal da função é possibilitar ao cliente que ele faça
+            retiradas, saques em sua conta.
+          </p>
+          <p>
+            Ele pode escolher, sacar da poupança ou do limite de crédito que o
+            banco disponibilizou. Além disso, a função não deve permitir a
+            entrada de valores negativos e não se pode realizar saques abaixo de
+            R$ 5,00.
+          </p>
+          <p>O caixa não realiza saques de valores com casa flutuante.</p>
+          <p>
+            Caso o valor solicitado para saque não esteja disponível na conta,
+            retorne "Saldo insuficiente".
+          </p>
+          <h3>Exemplificando</h3>
+          <ul>
+            <li>
+              Valide a entrada de dados para determinar o valor recebido. Se for
+              1:
+            </li>
+            <li>
+              Crie uma variável chamada responseWithDraw que armazena a resposta
+              de um prompt que solicita ao cliente que digite 1 para poupança ou
+              2 para crédito.
+            </li>
+            <li>
+              Crie uma variável chamada withdrawnAmount que armazena o valor que
+              o usuário deseja sacar por meio de um prompt
+            </li>
+            <li>O valor de saque não pode ser do tipo string.</li>
+            <li>O valor de saque tem que ser um inteiro positivo.</li>
+            <li>O valor de saque deve ser maior que 5 e menor que 500</li>
+            <li>
+              Se os requisitos da variável não for atendido retorne: "This value
+              is not allowed"
+            </li>
+            <li>
+              Chame a função makeWithDrawal , passando um objeto do tipo user, o
+              valor a ser sacado e o tipo da conta como parâmetro.
+            </li>
+            <li>
+              Teste se o valor pretendido de saque é menor ou igual ao saldo
+              disponível para perfil de conta informado.
+            </li>
+            <li>Se o usuário tiver saldo disponível</li>
+            <li>Decremente o valor do saldo com valor de saque passado.</li>
+            <li>Retornar dentro de um alert: "Withdrawal carried out."</li>
+            <li>
+              Caso contrário retorne dentro de uma alert: " Balance unavailable"
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>
+            Saldo - Desenvolva uma função chamada getBalance. Esta função irá
+            receber como parâmetro o tipo da conta e o usuário. A função deverá
+            retornar o saldo disponível.
+          </p>
+          <h3>Exemplificando</h3>
+          <ul>
+            <li>
+              Valide a entrada de dados para determinar o valor recebido. Se for
+              2:
+            </li>
+            <li>
+              Crie uma variável chamada responseBalance que armazena a resposta
+              de um prompt que solicita ao cliente que digite 1 para poupança ou
+              2 para crédito.
+            </li>
+            <li>
+              Chame a função getBalance, passando o user e o tipo da conta.
+            </li>
+            <li>
+              Crie uma variável chamada balance que armazena o valor da
+              propriedade de saldo referente ao tipo de conta informada.
+            </li>
+            <li>Retorne a variável balance em um alert.</li>
+          </ul>
+        </li>
+        <li>
+            <p>Depósito - Desenvolva uma função chamada makeDeposit. Esta função deve receber como parâmetro o usuário e o valor a ser depositado.</p>
+            <p>Os depósitos são incrementados no saldo de poupança.</p>
+            <h3>Exemplificando</h3>
+            <ul>
+                <li>Valide a entrada de dados para determinar o valor recebido. Se for 3:</li>
+                <li>Crie uma variável chamada valueForDeposit que armazena o valor que o usuário deseja depositar por meio de um prompt</li>
+                <li>O valor de depósito não pode ser do tipo string.</li>
+                <li>O valor de depósito tem que ser um inteiro positivo.</li>
+                <li>O valor de depósito deve ser maior que 5 e menor que 500</li>
+                <li>Se os requisitos da variável não for atendido retorne: "This value is not allowed"</li>
+                <li>Chame a função makeDeposit, passando o user e o valor a ser depositado.</li>
+                <li>Acesse a propriedade savingsBalance e a incremente com o valor passado para depósito.</li>
+                <li>Retorne dentro de um alert "Deposit made successfully"</li>
+            </ul>
+        </li>
+      </ol>
+    </main>
+  </body>
+</html>
