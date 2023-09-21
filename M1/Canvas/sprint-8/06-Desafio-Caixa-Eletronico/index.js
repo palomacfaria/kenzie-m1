@@ -10,18 +10,61 @@ const user = {
   ]
 };
 
-function makeWithDrawal(obj, valorSacado, tipoConta) {
+//Saque
+function makeWithDrawal(usuario) {
   let responseWithDraw = parseInt(
     prompt('Digite "1" para poupança e "2" para crédito')
   );
-  let withdrawnAmount;
+
+  let withdrawnAmount = parseInt(
+    prompt("Digite o valor que deseja sacar")
+  );
+
+  if (withdrawnAmount < 5 || withdrawnAmount > 500) {
+    alert("Este valor não é permitido");
+  }
 
   if (responseWithDraw === 1) {
-    withdrawnAmount = parseInt(prompt("Digite o valor que deseja sacar"));
-
-    if (withdrawnAmount < 5 || withdrawnAmount > 500) {
-      return "This value is not allowed";
+    if (withdrawnAmount < usuario.savingsBalance) {
+      usuario.savingsBalance -= withdrawnAmount;
+      alert("Retirada realizada.");
+    } else {
+      alert("Saldo indisponível");
     }
   }
+  else if (responseWithDraw === 2) {
+    if (withdrawnAmount < usuario.cardsInformation[0].creditBalance) {
+      usuario.cardsInformation[0].creditBalance -= withdrawnAmount;
+      alert("Retirada realizada.");
+    } else {
+      alert("Saldo indisponível");
+    }
+  }
+  return 'Valor inválido';
 }
-console.log(makeWithDrawal());
+console.log(makeWithDrawal(user));
+
+//Saldo
+function getBalance(usuario){
+  let responseBalance = parseInt(
+    prompt('Digite "1" para poupança e "2" para crédito'));
+
+    if(responseBalance === 1){
+      alert(`Seu saldo na poupança é de: R$${usuario.savingsBalance}`);
+    }
+    else if(responseBalance === 2){
+      alert(`Seu saldo na poupança é de: R$${usuario.cardsInformation[0].creditBalance}`);
+    }
+}
+console.log(getBalance(user));
+
+//Deposito
+function makeDeposit(usuario){
+  let valueForDeposit = parseInt(prompt("Digite o valor que deseja depositar"));
+
+  if(valueForDeposit < 5 || valueForDeposit > 500){
+    alert('Este valor não é permitido');
+  }
+  usuario.savingsBalance += valueForDeposit;
+}
+console.log(makeDeposit(user));
