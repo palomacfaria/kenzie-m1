@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js" defer></script>
+    <title>S8-07 | 🧠 Desafio - Javascript: Dados Escolares</title>
+  </head>
+  <body>
+    <header>
+      <h1>S8-07 | 🧠 Desafio - Javascript: Dados Escolares</h1>
+    </header>
+
+    <main>
+      <p>Você foi contratado para desenvolver uma solução, para as consultas referente aos dados dos alunos.</p>
+      <p>Com base nos dados de um aluno, você deverá desenvolver a lógica para consultar o curso, matérias, situação da matrícula e gerar a carteirinha de estudante.</p>
+      <p>Desenvolva um algorítimo que recebe recebe via prompt o tipo de consulta que sistema deve realizar.</p>
+      <p>A entrada deverá ser o número da opção, conforme a ordem a seguir:</p>
+      <ol>
+        <li>Curso</li>
+        <li>Matéria</li>
+        <li>Situação de Matrícula</li>
+        <li>Gerar Carteira</li>
+      </ol>
+      <p>O valor de entrada deve ser obrigatoriamente um número de 1 a 4.</p>
+      <h2>Estruturando as funcionalidades</h2>
+      <ol>
+        <li>
+            <p>Curso - Desenvolva uma função chamada getTheCurse. Esta função recebe como parâmetro um objeto do tipo aluno, deve acessar a propriedade curso e retornar por meio de um alert em qual curso o aluno está matriculado.</p>
+            <h3>Exemplificando</h3>
+            <ul>
+                <li>Valide a entrada de dados para determinar o valor recebido. Se for 1:</li>
+                <li>Chame a Função getTheCurse passando o objeto alunoCurso.</li>
+                <li>Ao receber um objeto do tipo aluno como parâmetro acesse a propriedade curso e retorne seu valor em um alert</li>
+            </ul>
+        </li>
+
+        <li>
+            <p>Matéria - Desenvolva uma função chamada getTheSubjects . Esta função recebe como parâmetro um objeto do tipo aluno, deve acessar a propriedade materias e retornar por meio de um alert a lista de materias do aluno.</p>
+            <h3>Exemplificando</h3>
+            <ul>
+              <li>Valide a entrada de dados para determinar o valor recebido. Se for 2:</li>
+            <li>Chame a função getTheSubjects passando como parâmetro um objeto do tipo aluno.</li>
+            <li>Ao receber o objeto do tipo aluno como parâmetro, acesse a propriedade materias e retorne seu valor em um alert.</li>
+            </ul>
+        </li>
+
+        <li>
+            <p>Situação de Matrícula - Desenvolva uma função chamada resgistrationStatus. Esta função recebe como parâmetro um objeto do tipo aluno. Deve acessar a propriedade situacaoMatricula, tratar o valor contido, sendo true = Ativo e false = inativo. Retorna o valor tratado em um alert.</p>
+            <h3>Exemplificando</h3>
+            <ul>
+                <li>Valide a entrada de dados para determinar o valor recebido. Se for 3:</li>
+                <li>Chame a função resgistrationStatus passando como parâmetro um objeto do tipo aluno.</li>
+                <li>Acesse a propriedade situacaoMatricula.</li>
+                <li>Se o valor de situacaoMatricula for igual a true.</li>
+                <li>Retorne em um alert "Ativo"</li>
+                <li>Se a propriedade situacaoMatricula for igual a false.</li>
+                <li>Retorne em um alert "Inativo"</li>
+            </ul>
+         </li>
+
+        <li>
+            <p>Gerar Carteira - Desenvolva uma função chamada generateStudentCard. Esta função recebe como parâmetro um objeto do tipo aluno. A função deve retornar uma string, contendo as propriedades: nome, idade, curso e instituição.</p>
+            <h3>Exemplificando</h3>
+            <ul>
+                <li>Valide a entrada de dados para determinar o valor recebido. Se for 4:</li>
+                <li>Chame a função generateStudentCard passando como parâmetro um objeto do tipo aluno.</li>
+                <li>Crie uma variável cardInformation</li>
+                <li>Armazene nesta variável uma string com o seguinte formato:
+                    name: "Joe", idade: "31", curso: "FullStack", instituição: "Kenzie Br"</li>
+                <li>Lembre-se de substituir os valores fixados pelas propriedades do objeto, para quando o objeto diferir, sua função ainda continue funcionando.</li>
+                <li>Retorne a variável cardInformation dentro de um alert</li>
+                <p>O exemplo acima é fictício, representa somente o formato com que o seu resultado deve se parecer. O valores devem ser acessados por meio das propriedades do objeto fornecido.</p>
+            </ul>
+        </li>
+      </ol>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
